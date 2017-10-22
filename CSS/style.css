@@ -28,7 +28,7 @@ body {
   padding-bottom: 50px;
   text-align: center;
   /*background: radial-gradient(circle, #FFF 30%, #B6D2EC);*/
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url("https://dl.dropboxusercontent.com/s/8c6a6p3n8slj28j/handsOnLaptop.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url("../Images/handsOnLaptop.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -76,7 +76,7 @@ section {
 .bg-overlay-port {
   text-align: center;
   background-color: transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("https://dl.dropboxusercontent.com/s/d332tbcnfs8178q/gears-of-time-bw-david-paul-murray.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Images/gears-of-time-bw-david-paul-murray.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -227,7 +227,7 @@ Code credit: https://miketricking.github.io/dist/*/
 
 .bg-overlay-contact {
   background-color: transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("https://dl.dropboxusercontent.com/s/4o8tz1xl34zsdub/circutBoard.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Images/circutBoard.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-clip: border-box;
