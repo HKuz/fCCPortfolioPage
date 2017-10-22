@@ -1,0 +1,272 @@
+/*
+Extention to fix dropbox photo links:
+https://dl.dropboxusercontent.com/
+
+Project Hover Overlay Formatting
+Code credit: https://miketricking.github.io/dist/
+
+Background images from google image web search and are not my own.
+computer: specialedresource.com
+http://specialedresource.com/wp-content/uploads/2015/02/Typing-on-a-Laptop.jpg
+
+gears: fineartamerica.com
+http://images.fineartamerica.com/images-medium-large/gears-of-time-black-and-white-david-paul-murray.jpg
+
+circuit board:
+http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0152/6961/rrrobot_circut_black_gray_mirror.png
+
+*/
+
+body {
+  background-position: center;
+  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.intro-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  /*background: radial-gradient(circle, #FFF 30%, #B6D2EC);*/
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url("https://dl.dropboxusercontent.com/s/8c6a6p3n8slj28j/handsOnLaptop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 650px;
+}
+
+.intro-text {
+  margin-top: 50px;
+  padding: 30px 30px 50px 30px;
+  border: 2px solid #006dcc;
+  position: relative;
+}
+
+.intro-text > h1 {
+  text-shadow: 1px 1px 2px #444;
+  font-size: 5em;
+  color: #222;
+}
+
+.intro-text > h3 {
+  text-shadow: 1px 1px 1px #444;
+}
+
+/*.well {
+  background: #DFDFDF;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}*/
+
+.hr-divider {
+  background-color: #006dcc;
+  border: 1px outset #006dcc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  width: 90%;
+}
+
+
+/* Portfolio Section Formatting */
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bg-overlay-port {
+  text-align: center;
+  background-color: transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("https://dl.dropboxusercontent.com/s/d332tbcnfs8178q/gears-of-time-bw-david-paul-murray.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-heading {
+  color: #000;
+  font-size: 4em;
+}
+
+.section-subheading {
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  margin-right: -4px;
+}
+
+portfolio * {
+  display: block;
+}
+
+.portfolio-item {
+  max-width: 400px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.portfolio-caption {
+  color: #888;
+  background-color: #222;
+  text-align: center;
+  margin: 0px;
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.hideme {
+  color: #222;
+  line-height: 0.5em;
+}
+
+.portfolio-caption > h4 {
+  font-size: 1.5em;
+}
+
+.portfolio-caption > p {
+  font-style: italic;
+  font-size: 1em;
+  margin-top: -5px;
+}
+
+/* Project Hover Overlay Formatting
+Code credit: https://miketricking.github.io/dist/*/
+
+.portfolio-link {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  cursor: default;
+}
+
+.portfolio-link .portfolio-overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 3px solid #888;
+  border-top: 3px solid #888;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.portfolio-link:hover .portfolio-overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.portfolio-link img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.portfolio-link:hover img {
+  filter: alpha(opacity=0);
+  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+}
+
+.portfolio-link h2 {
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  background-color: transparent;
+  color: #888;
+  padding: 1.25em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.portfolio-link p {
+  color: #888;
+  padding-bottom: 1.25em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.portfolio-link:hover h2, .portfolio-link:hover p, .portfolio-link:hover i {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+/* Contact Section Formatting */
+
+.bg-overlay-contact {
+  background-color: transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("https://dl.dropboxusercontent.com/s/4o8tz1xl34zsdub/circutBoard.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position: center center;
+  background-size: cover;
+  padding: 15px;
+  min-height: 0px;
+}
+
+.contact-heading > h4 {
+  color: #000;
+  font-size: 2em;
+}
+
+.contact-heading > p {
+  color: #222;
+}
+
+.contact-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact-btn:hover {
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+}
+
+
+footer {
+  clear: both;
+  color: #888;
+  background-color: #222;
+  height: 30px;
+  font-size: 80%;
+  padding: 7px;
+  display: block;
+}
